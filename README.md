@@ -2,7 +2,7 @@
 
 <a href="https://pkg.go.dev/github.com/hexops/cmder"><img src="https://pkg.go.dev/badge/badge/github.com/hexops/cmder.svg" alt="Go Reference" align="right"></a>
   
-[![Go CI](https://github.com/hexops/cmder/workflows/Go%20CI/badge.svg)](https://github.com/hexops/cmder/actions) [![codecov](https://codecov.io/gh/hexops/cmder/branch/main/graph/badge.svg?token=Iw1FdYk0m8)](https://codecov.io/gh/hexops/cmder) [![Go Report Card](https://goreportcard.com/badge/github.com/hexops/cmder)](https://goreportcard.com/report/github.com/hexops/cmder)
+[![Go CI](https://github.com/hexops/cmder/workflows/Go%20CI/badge.svg)](https://github.com/hexops/cmder/actions) [![Go Report Card](https://goreportcard.com/badge/github.com/hexops/cmder)](https://goreportcard.com/report/github.com/hexops/cmder)
 
 Cmder:
 
