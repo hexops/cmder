@@ -1,4 +1,4 @@
-# cmder - lightweight Go pattern for writing CLIs with subcommands <a href="https://hexops.com"><img align="right" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/readme.svg"></img></a>
+# cmder - lightweight Go pattern for writing CLIs <a href="https://hexops.com"><img align="right" alt="Hexops logo" src="https://raw.githubusercontent.com/hexops/media/master/readme.svg"></img></a>
 
 <a href="https://pkg.go.dev/github.com/hexops/cmder"><img src="https://pkg.go.dev/badge/badge/github.com/hexops/cmder.svg" alt="Go Reference" align="right"></a>
   
