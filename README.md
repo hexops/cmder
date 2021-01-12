@@ -4,13 +4,13 @@
   
 [![Go CI](https://github.com/hexops/cmder/workflows/Go%20CI/badge.svg)](https://github.com/hexops/cmder/actions) [![Go Report Card](https://goreportcard.com/badge/github.com/hexops/cmder)](https://goreportcard.com/report/github.com/hexops/cmder)
 
-Cmder:
+Cmder is a ~100 LOC pattern that has been used as the foundation of all the Go CLIs [I've](https://twitter.com/slimsag) written (including [the Sourcegraph CLI](https://github.com/sourcegraph/src-cli/blob/1af97e4f78819ffd042ef000d964090dbb65268f/cmd/src/cmd.go#L1-L123).)
+
+I've [often just suggested others simply copy the pattern](https://twitter.com/slimsag/status/1330924665544404994) as it is so lightweight. Now you can import it as a Go package, which helps to document the pattern you're using, and avoids temptation to make it more complex than needed.
 
 * Mimics what the official `go` tool does internally.
-* Is a ~100 LOC pattern that has been used as the foundation of all the Go CLIs I've written (including [the Sourcegraph CLI](https://github.com/sourcegraph/src-cli/blob/1af97e4f78819ffd042ef000d964090dbb65268f/cmd/src/cmd.go#L1-L123).)
-* It merely builds upon the `flag` package to support subcommands.
-
-I've [often just suggested others simply copy the pattern](https://twitter.com/slimsag/status/1330924665544404994) as it is a single file and so lightweight. Now, you can import it as a Go package (which helps to document the pattern you're using, and avoids temptation to make it more complex than needed.)
+* Merely builds upon the `flag` package to support subcommands.
+* Supports subcommand flags, subcommands of subcommands, etc.
 
 ## Example
 
