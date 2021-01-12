@@ -59,3 +59,17 @@ Consult the [API documentation](https://pkg.go.dev/github.com/hexops/cmder) for 
 ## Project status
 
 We're open to considering improvements, but since this pattern has been in use in various CLIs over the past 3-4 years, we likely won't make any major changes to the API or introduce new features. The aim is to keep it minimal and simple.
+
+## Popular alternatives
+
+Some popular alternatives which aim to be simple:
+
+- [peterbourgon/ff/ffcli](https://github.com/peterbourgon/ff/tree/master/ffcli) (quite good; also has config file parsing)
+- [google/subcommands](https://github.com/google/subcommands) (not quite as minimal as cmder)
+
+Some popular alternatives which provide as many features and knobs as you could want include:
+
+- [spf13/cobra](https://github.com/spf13/cobra)
+- [jessevdk/go-flags](https://github.com/jessevdk/go-flags)
+- [alecthomas/kingpin](https://github.com/alecthomas/kingpin)
+- [alecthomas/kong](https://github.com/alecthomas/kong)
