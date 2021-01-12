@@ -26,7 +26,7 @@ Examples:
 
 	// Handles calls to our subcommand.
 	handler := func(args []string) error {
-		flagSet.Parse(args)
+		_ = flagSet.Parse(args)
 
 		// do something with args and *verboseFlag
 		fmt.Println("subcommand called with", flagSet.Args(), "verbose?", *verboseFlag)
