@@ -38,7 +38,7 @@ flagSet := flag.NewFlagSet("foo", flag.ExitOnError)
 commands = append(commands, &cmder.Command{
     FlagSet: flagSet,
     Handler: func(args []string) error {
-        flagSet.Parse(args)
+        _ = flagSet.Parse(args)
         return nil
     },
 })

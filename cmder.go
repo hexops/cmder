@@ -51,10 +51,13 @@ type Commander []*Command
 func (c Commander) Run(flagSet *flag.FlagSet, cmdName, usageText string, args []string) {
 	// Parse flags.
 	flagSet.Usage = func() {
-		fmt.Fprintf(flag.CommandLine.Output(), usageText)
+		fmt.Fprint(flag.CommandLine.Output(), usageText)
 	}
 	if !flagSet.Parsed() {
-		flagSet.Parse(args)
+		// We assume flag.ExitOnError is in use.
+		if err := flagSet.Parse(args); err != nil {
+			panic(fmt.Sprintf("command should use flag.ExitOnError: error: %s", err))
+		}
 	}
 
 	// Print usage if the command is "help".
