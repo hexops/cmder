@@ -48,7 +48,7 @@ Examples:
 		UsageFunc: func() {
 			fmt.Fprintf(flag.CommandLine.Output(), "Usage of 'kurl %s':\n", flagSet.Name())
 			flagSet.PrintDefaults()
-			fmt.Println(usage)
+			fmt.Fprintf(flag.CommandLine.Output(), "%s\n", usage)
 		},
 	})
 }

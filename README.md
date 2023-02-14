@@ -73,3 +73,13 @@ Some popular alternatives which provide as many features and knobs as you could 
 - [jessevdk/go-flags](https://github.com/jessevdk/go-flags)
 - [alecthomas/kingpin](https://github.com/alecthomas/kingpin)
 - [alecthomas/kong](https://github.com/alecthomas/kong)
+
+## Version history
+
+### v1.0.2
+
+Fixed an issue where subcommands incorrectly had their flags parsed twice. Handlers should always call `flagSet.Parse(args)` on the arguments passed to them, as demonstrated in `example/kurl/get.go`.
+
+### v1.0.1
+
+Initial release.

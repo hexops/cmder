@@ -86,12 +86,6 @@ func (c Commander) Run(flagSet *flag.FlagSet, cmdName, usageText string, args []
 			continue
 		}
 
-		// Parse subcommand flags.
-		args := flagSet.Args()[1:]
-		if err := cmd.FlagSet.Parse(args); err != nil {
-			panic(fmt.Sprintf("all registered commands should use flag.ExitOnError: error: %s", err))
-		}
-
 		// Execute the subcommand.
 		if err := cmd.Handler(flagSet.Args()[1:]); err != nil {
 			if _, ok := err.(*UsageError); ok {
